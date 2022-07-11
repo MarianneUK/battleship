@@ -1,3 +1,13 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+from random import randint
+
+# creates the 6x6 grid
+board = []
+
+for x in range(6):
+    board.append(["."] * 6)
+
+def print_board(board):
+    # prints the board in the console when called
+    for row in board:
+        print((" ").join(row))
+
