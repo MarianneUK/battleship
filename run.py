@@ -29,7 +29,7 @@ ship_col = random_col(board)
 print(ship_row, ship_col) #to ensure the functions are working
 
 # calculates and displays the user's number of turns
-for turn in range(5):
+for turn in range(7):
     print(f"Turn {turn +1}")
     # asks user for input and ensure int data type
     user_row = int(input("Row (0-4):"))
@@ -38,8 +38,9 @@ for turn in range(5):
     # if-statements upon user's input
     if user_row == ship_row and user_col == ship_col:
         print(f"{user_name} sunk my battleship :-(")
-        #new_game(input("Do you want to play again? y/n"))
+        print("Well done!")
         break
+        
     else:
         if (user_row < 0 or user_row > 4) or (user_col < 0 or user_col > 4):
             print(f"Sorry {user_name}, off grid! Lose 1 turn.")
@@ -48,3 +49,10 @@ for turn in range(5):
         else:
             print("Not here! Try again!")
             board[user_row][user_col] = "X"
+
+    print_board(board)
+    
+    if turn == 4:
+        print("Game Over")
+        print(f"{user_name} ran out of turns.")
+        break
