@@ -35,7 +35,16 @@ for turn in range(5):
     user_row = int(input("Row (0-4):"))
     user_col = int(input("Col (0-4):"))
 
-    # if statements upon user's input
+    # if-statements upon user's input
     if user_row == ship_row and user_col == ship_col:
         print(f"{user_name} sunk my battleship :-(")
-        new_game(input("Do you want to play again? y/n"))
+        #new_game(input("Do you want to play again? y/n"))
+        break
+    else:
+        if (user_row < 0 or user_row > 4) or (user_col < 0 or user_col > 4):
+            print(f"Sorry {user_name}, off grid! Lose 1 turn.")
+        elif (board[user_row][user_col] == "X"):
+            print("Coordinates already provided. Lose 1 turn.")
+        else:
+            print("Not here! Try again!")
+            board[user_row][user_col] = "X"
