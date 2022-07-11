@@ -1,31 +1,95 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# WHERE'S THE SHIP?
 
-Welcome Marianne J.,
+Where's the Ship is a simple guessing game based on the classic game "Battleships". Deployed to Heroku, this mini-game is python based and single player.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+[View the live project here.](https://herokuapp/)
 
-## Reminders
+![readme hero image](/assets/images/hero.png)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+# Table of Contents
+- [1. How to Play](#how-to-play)
+- [2. Features](#features)
+  * [2.1. Existing Features](#existing-features)
+  * [2.2. Features Left to Implement](#features-to-implement)
+- [3. Testing](#testing)
+  * [3.1. Bugs](#bugs)
+    + [3.1.1. Known Bugs](#known-bugs)
+    + [3.1.2. Solved Bugs](#solved-bugs)
+    + [3.1.3. Remaining Bugs](#remaining-bugs)
+  * [3.2. Validator Testing](#validator-testing)
+- [4. Deployment](#deployment)
+- [5. Credits](#credits)
 
-## Creating the Heroku app
+<a name="ux"></a>
+# 1. How to Play
+  [Go to the top](#table-of-contents)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+Where's the Ship? is based on the classic pen-and-paper game Battleships. You can read more about it on this [Wikipedia page](https://en.wikipedia.org/wiki/Battleship_%28game%29). 
+In this single-player version, the player is asked for their name and a board is automatically generated. The board's spaces are marked with " . " and the shots are marked with " X ".
+The player has 5 turns to guess where the ship is. 
+After 5 attemps, the game is over.
 
-1. `heroku/python`
-2. `heroku/nodejs`
+<a name="features"></a>
+# 2. Features
+  [Go to the top](#table-of-contents)
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+<a name="strategy"></a>
+## 2.1. Existing Features
+  [Go to the top](#table-of-contents)
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+- Random board generation
+- Random ship placement
+- Accepts user input
+- Input validation
+* the player cannot enter coordinates outside the grid
+* the player cannot enter the same coordinates twice
 
-Connect your GitHub repository and deploy as normal.
+<a name="strategy"></a>
+## 2.2. Features Left to Implement
+  [Go to the top](#table-of-contents)
 
-## Constraints
+<a name="features"></a>
+# 3. Testing
+  [Go to the top](#table-of-contents)
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+This project was manually tested by doing the following:
+    - passed the code through a PEP8 test
+    - entered invalid input to test error messages
+    - the project was tested on different terminals
 
------
-Happy coding!
+<a name="strategy"></a>
+## 3.1. Bugs
+  [Go to the top](#table-of-contents)
+
+<a name="strategy"></a>
+### 3.1.1. Known bugs
+  [Go to the top](#table-of-contents)
+
+<a name="strategy"></a>
+### 3.1.2. Solved bugs
+  [Go to the top](#table-of-contents)
+
+<a name="strategy"></a>
+### 3.1.3. Remaining bugs
+  [Go to the top](#table-of-contents)
+
+<a name="strategy"></a>
+## 3.2. Validator Testing
+  [Go to the top](#table-of-contents)
+
+<a name="ux"></a>
+# 4. Deployment
+  [Go to the top](#table-of-contents)
+
+This project as deployed using Code Institute's mock terminal for Heroku.
+    * Steps for deployment:
+        + Fork or clone this repository
+        + Create a new Heroku app
+        + Set the buildbacks to <Python> and <NodeJS> in that order
+        + Link the Heroku app to the repository
+        + Click on **Deploy**
+
+<a name="features"></a>
+# 5. Credits
+  [Go to the top](#table-of-contents)
+
