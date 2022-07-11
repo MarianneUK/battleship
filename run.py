@@ -12,10 +12,14 @@ def print_board(board):
         print((" ").join(row))
 
 # greets the player
-print("Welcome to this simple single player game!")
+print("-------------------------------------------")
+print("WHERE'S THE SHIP?")
+print("-------------------------------------------")
+print("Welcome to this simple, single-playing game!")
 user_name = input("What's your name?: ")
-print(f"Let's play Battleship, {user_name}!")
-print("There is 1 ship on the grid. You have 5 tries.")
+print(f"Let's play Where's the Ship, {user_name}!")
+print("There is 1 ship hidden in the grid.")
+print("You have 5 attemps to find it.")
 print_board(board)
 
 # randomly assigns a ship on a row and a column
@@ -26,10 +30,10 @@ def random_col(board):
 
 ship_row = random_row(board)
 ship_col = random_col(board)
-print(ship_row, ship_col) #to ensure the functions are working
+# print(ship_row, ship_col) to ensure the functions are working
 
 # calculates and displays the user's number of turns
-for turn in range(7):
+for turn in range(5):
     print(f"Turn {turn +1}")
     # asks user for input and ensure int data type
     user_row = int(input("Row (0-4):"))
