@@ -2,9 +2,9 @@
 
 Where's the Ship? is a simple guessing game based on the classic game "Battleships". Deployed to Heroku, this mini-game is python based and single player.
 
-[View the live project here.](https://herokuapp/)
+[View the live project here.](https://wheres-the-ship.herokuapp.com/)
 
-![readme hero image](/assets/images/hero.png)
+![readme hero image](/assets/images/webpage.png)
 
 # Table of Contents
 - [1. How to Play](#how-to-play)
@@ -32,7 +32,7 @@ Where's the Ship? is a simple guessing game based on the classic game "Battleshi
 
   The project is built in Python but can be easily accessed on a web page, thanks to Code Institute's mock terminal for Heroku.
 
-  ![webpage](/assets/images/webpage.png)
+  ![homepage](/assets/images/homepage.png)
 
 <a name="existing-features"></a>
 ## 2.1. Existing Features
@@ -42,13 +42,13 @@ Where's the Ship? is a simple guessing game based on the classic game "Battleshi
   - Random ship placement
   - Accepts user input
 
-![readme image](/assets/images/hero.png)
+![feature image](/assets/images/feat1.png)
 
   - Input validation
      + the player cannot enter coordinates outside the grid
      + the player cannot enter the same coordinates twice
 
-![readme image](/assets/images/hero.png)
+![feature image](/assets/images/feat2.png)
 
 <a name="features-to-implement"></a>
 ## 2.2. Features Left to Implement
@@ -72,20 +72,23 @@ Where's the Ship? is a simple guessing game based on the classic game "Battleshi
   [Go to the top](#table-of-contents)
 
 ### 3.1.1. Known bugs
-
+  - Issues met were related to the user's turns display not displaying digits.
+  - Game over message not displaying after 5 turns.
 
 ### 3.1.2. Solved bugs
-
+  - Both above bugs were resolved.
 
 ### 3.1.3. Remaining bugs
-  - No remaining bugs.
+  - Error messages from GitPod and the PEP8 validator.
 
 <a name="validator-testing"></a>
 ## 3.2. Validator Testing
   [Go to the top](#table-of-contents)
   
   - PEP8
-    + No errors were returned from PEP8online.com
+    + These are the errors returned from PEP8online.com
+
+![pep8 image](/assets/images/pep8.png)
 
 <a name="deployment"></a>
 # 4. Deployment

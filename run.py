@@ -44,7 +44,6 @@ for turn in range(5):
         print(f"{user_name} sunk my battleship :-(")
         print("Well done!")
         break
-        
     else:
         if (user_row < 0 or user_row > 4) or (user_col < 0 or user_col > 4):
             print(f"Sorry {user_name}, off grid! Lose 1 turn.")
@@ -53,9 +52,7 @@ for turn in range(5):
         else:
             print("Not here! Try again!")
             board[user_row][user_col] = "X"
-
     print_board(board)
-    
     if turn == 4:
         print("Game Over")
         print(f"{user_name} ran out of turns.")
