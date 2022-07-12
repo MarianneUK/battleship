@@ -98,7 +98,7 @@ Where's the Ship? is a simple guessing game based on the classic game "Battleshi
   - Steps for deployment:
     + Fork or clone this repository
     + Create a new Heroku app
-    + Set the buildbacks to <Python> and <NodeJS> in that order
+    + Set the buildbacks to Python and NodeJS in that order
     + Link the Heroku app to the repository
     + Click on **Deploy**
 
